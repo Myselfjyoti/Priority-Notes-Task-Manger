@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Task/Note Editor</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- FullCalendar CSS -->
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css" rel="stylesheet">
+
+<!-- jsPDF Library for PDF Export -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+    <input type="text" id="search" placeholder="Search notes...">
+    <button id="addNoteBtn">Add Note</button>
+    <button id="undoBtn">Undo</button>
+    <button id="redoBtn">Redo</button>
+    <button id="exportPDFBtn">Export PDF</button>
+</div>
+
+<!-- Main Container -->
+<div class="main-container">
+    <!-- Sidebar for Tags -->
+    <div class="sidebar">
+        <h3>Tags</h3>
+        <div id="tagList"></div>
+    </div>
+
+    <!-- Notes Area -->
+    <div class="notes-container" id="notesArea">
+        <!-- Notes will be rendered here -->
+    </div>
+
+    <!-- Calendar Area -->
+    <div class="calendar-container">
+        <div id="calendar"></div>
+    </div>
+</div>
+
+<!-- FullCalendar JS -->
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script>
+
+<!-- Main JS -->
+<script src="main.js"></script>
+</body>
+</html>
